@@ -9,7 +9,7 @@ connect()  // we have to connect the server before we can use it every time
 export async function POST(request: NextRequest){  // post is an request to the server 
     try {
 
-        const reqBody = await request.json()
+        const reqBody = await request.json()  // request.json is a method that will get the body of the request
         const {email, password} = reqBody;
         console.log(reqBody);
 
